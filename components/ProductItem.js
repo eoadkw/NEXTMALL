@@ -1,15 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductItem({ product }) {
   return (
     <div className="card">
       <Link href={`/product/${product.slug}`}>
         <a>
-          <img
+          <Image
             src={product.image}
             alt={product.name}
             className="rounded shadow"
+            width={640}
+            height={640}
+            layout="responsive"
           />
         </a>
       </Link>
