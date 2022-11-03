@@ -66,7 +66,7 @@ export default function CartScreen() {
                     <td className="p-5 text-right">${item.price}</td>
                     <td className="p-5 text-center">
                       <button onClick={() => removeItemHandler(item)}>
-                        <XCirclelcon className="h-5 w-5"></XCirclelcon>
+                        <XCircleIcon className="h-5 w-5"></XCircleIcon>
                       </button>
                     </td>
                   </tr>
